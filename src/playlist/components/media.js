@@ -3,12 +3,21 @@ import './media.css';
 import PropTypes from 'prop-types';
 
 class Media extends Component{
+  state = {
+    author: 'Jose Manuel'
+  }
   // constructor(props){
   //   super(props)
-  //   this.handleClick = this.handleClick.bind(this);
+  //   this.state = {
+  //     author: props.author
+  //   }
+  //   // this.handleClick = this.handleClick.bind(this);
   // }
   handleClick = (event) =>{
-    console.log(this.props.image);
+    // console.log(this.props.image);
+    this.setState({
+      author: 'Ricardo Celis'
+    })
   }
 
   render(){
@@ -23,7 +32,7 @@ class Media extends Component{
             height={160}
           />
           <h3 className="Media-title">{this.props.title}</h3>
-          <p className="Media-author">{this.props.author}</p>
+          <p className="Media-author">{this.state.author}</p>
         </div>
       </div>
     )
