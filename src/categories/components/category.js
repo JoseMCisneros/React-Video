@@ -1,6 +1,6 @@
 import React from 'react';
 import Playlist from '../../playlist/components/playlist';
-import './'
+import './category.css'
 
 function Category(props) {
   return(
